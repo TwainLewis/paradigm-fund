@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.754" height="69" viewBox="0 0 59.754 69">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b0bec5"/>
+      <stop offset="1" stop-color="#78909c"/>
+    </linearGradient>
+  </defs>
+  <path id="Логотипы_партнеров_Logo_Wanchain" d="M43.277,30.619,13.4,48.162v9.66L43.277,40.261,73.154,57.8v-9.66ZM22.129,19.979,43.277,7.769l21.149,12.21,7.9-3.212L43.277,0,14.231,16.767Zm42.3,2.042v27l-3.14,1.815,6.669,3.916,5.2-3V18.471ZM25.268,50.836,22.1,49.007v-27l-8.7-3.54V51.75l5.2,3Zm34.155,1.073L43.277,61.224,27.131,51.909l-6.669,3.919L43.277,69,66.092,55.828Z" transform="translate(-13.4)" fill="url(#linear-gradient)"/>
+</svg>

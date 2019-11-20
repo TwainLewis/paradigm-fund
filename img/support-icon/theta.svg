@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.835" height="69" viewBox="0 0 42.835 69">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b0bec5"/>
+      <stop offset="1" stop-color="#78909c"/>
+    </linearGradient>
+  </defs>
+  <path id="Логотипы_партнеров_Logo_Theta" data-name="Логотипы партнеров_Logo_Theta" d="M77.326,69H41.349L37.92,65.574V3.426L41.349,0H77.326l3.429,3.426V65.574ZM44.775,62.145H73.9V6.855H44.775ZM70.24,44.312H62.788v7.8H56.067v-7.8H48.615V37.6H70.24Zm0-19.261H62.788v-7.8H56.067v7.8H48.615v6.721H70.24Z" transform="translate(-37.92)" fill="url(#linear-gradient)"/>
+</svg>

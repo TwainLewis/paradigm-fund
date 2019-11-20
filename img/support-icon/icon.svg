@@ -1,0 +1,19 @@
+<svg id="ICON_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b0bec5"/>
+      <stop offset="1" stop-color="#78909c"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1_">
+    <g id="Subtract_1_" transform="translate(7.367 7.212)">
+      <path id="path0_fill_1_" d="M-121.173,520.986a16.79,16.79,0,0,1-16.787,16.787,16.718,16.718,0,0,1-8.625-2.38l-7.448,7.448a27.045,27.045,0,0,0,16.073,5.264,27.125,27.125,0,0,0,27.12-27.12,27.045,27.045,0,0,0-5.264-16.073l-7.448,7.448a16.755,16.755,0,0,1,2.38,8.625Zm-.756-21.869-7.448,7.448a16.717,16.717,0,0,0-8.583-2.352A16.79,16.79,0,0,0-154.747,521a16.815,16.815,0,0,0,2.352,8.583l-7.448,7.448A27.053,27.053,0,0,1-165.08,521a27.125,27.125,0,0,1,27.12-27.12,26.865,26.865,0,0,1,16.031,5.236Z" transform="translate(165.08 -493.88)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Ellipse_2_1_" transform="translate(55.873)">
+      <path id="path1_fill_3_" d="M-138.353,499.07a7.069,7.069,0,0,1-7.07,7.07,7.057,7.057,0,0,1-7.056-7.07,7.066,7.066,0,0,1,7.056-7.07A7.078,7.078,0,0,1-138.353,499.07Z" transform="translate(152.48 -492)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Ellipse_2.1_1_" transform="translate(0 55.859)">
+      <path id="path1_fill_2_" d="M-152.873,513.58a7.069,7.069,0,0,1-7.07,7.07A7.057,7.057,0,0,1-167,513.58a7.069,7.069,0,0,1,7.07-7.07A7.066,7.066,0,0,1-152.873,513.58Z" transform="translate(167 -506.51)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -6406,7 +6406,18 @@ a:focus {
   }
 
   .contact-us-form {
-    max-width: 350px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-us-form__content {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .contact-us-form__content-right {
+    padding-left: 0;
+    margin-top: 30px;
   }
 
   .contact-us-form .input-slim {
@@ -6417,6 +6428,18 @@ a:focus {
 
   .contact-us-form .btn-primary {
     min-width: 100%;
+  }
+
+  .contact-us-form textarea {
+    min-height: 120px;
+  }
+
+  .team .tabs {
+    margin-top: 20px;
+  }
+
+  .team .tabs-navigation {
+    margin-bottom: 30px;
   }
 }
 

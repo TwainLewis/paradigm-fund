@@ -2269,12 +2269,7 @@ a:focus {
   font-size: 18px;
 }
 
-.contact-us .title {
-  margin: 20px 0 50px;
-}
-
 .contact-us .title-small {
-  text-align: left;
   margin-bottom: 50px;
 }
 
@@ -2284,10 +2279,44 @@ a:focus {
   flex-flow: column wrap;
 }
 
-.contact-us-form .input-slim {
-  width: 300px;
-  margin-right: 90px;
-  margin-bottom: 60px;
+.contact-us-form__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact-us-form__content-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-form__content-left .input-thick {
+  margin-bottom: 30px;
+}
+
+.contact-us-form__content-left .input-thick::placeholder {
+  text-transform: uppercase;
+}
+
+.contact-us-form__content-left .input-thick:last-child {
+  margin-bottom: 0;
+}
+
+.contact-us-form__content-right {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.contact-us-form__content-right textarea {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  resize: none;
+  padding: 10px;
+}
+
+.contact-us-form__content-right textarea::placeholder {
+  text-align: left;
 }
 
 .contact-us-form .btn-primary {

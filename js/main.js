@@ -489,6 +489,10 @@ __webpack_require__.r(__webpack_exports__);
           var elem = document.querySelectorAll(".sidebar-navigation__item");
           [].forEach.call(elem, function (el) {
             el.classList.remove("sidebar-navigation__item-active");
+
+            if (sectionNumber === '2' || sectionNumber === '3' || sectionNumber === '4') {
+              document.querySelector('.nav-num-1').classList.add('sidebar-navigation__item-active');
+            }
           });
           document.querySelector('.nav-num-' + sectionNumber).classList.add('sidebar-navigation__item-active');
         }

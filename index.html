@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -25,7 +26,8 @@
                     <nav>
                         <ul class="header-navigation">
                             <li class="header-navigation__item">
-                                <a href="/">Knowledge base <img src="./img/triangle-down.svg" alt="triangle-down"></a>
+                                <a href="/">Knowledge base <img src="./img/triangle-down.svg"
+                                                                alt="triangle-down"></a>
                             </li>
                             <li class="header-navigation__item">
                                 <a href="/" class="red-link">Sign in</a>
@@ -40,7 +42,7 @@
                             <img src="./img/mob-logo.svg" alt="paradigm" class="logo logo-none">
                         </a>
                     </div>
-                    <button class="btn btn-link">
+                    <button class="btn btn-link" id="btn-menu-open">
                         <img src="./img/icon/icon-menu.svg" alt="menu">
                     </button>
                 </div>
@@ -51,7 +53,7 @@
             <div class="col-24 col-sm-24 mob-sidebar-none col-md-6 col-lg-5 col-xl-5" id="sidebar">
                 <div class="sidebar">
                     <div class="mob-navigation-header">
-                        <button class="btn btn-link" id="btn-menu-close">
+                        <button class="btn btn-link btn-menu-close" id="btn-menu-close">
                             <img src="./img/icon-close.svg" alt="icon-close">
                         </button>
                     </div>
@@ -64,9 +66,11 @@
                                 <a href="#1">About</a>
                                 <ul class="sidebar-navigation-drop">
                                     <li class="sidebar-navigation__item nav-num-first"><a href="#1">Company</a></li>
-                                    <li class="sidebar-navigation__item nav-num-2"><a href="#2">Mission</a></li>
+                                    <li class="sidebar-navigation__item nav-num-2"><a href="#2">Mission</a>
+                                    </li>
                                     <li class="sidebar-navigation__item nav-num-3"><a href="#3">Team</a></li>
-                                    <li class="sidebar-navigation__item nav-num-4"><a href="#4">Contacts</a></li>
+                                    <li class="sidebar-navigation__item nav-num-4"><a href="#4">Contacts</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="sidebar-navigation__item nav-num-5"><a href="#5">Networks</a></li>
@@ -77,30 +81,40 @@
                     </nav>
                     <nav>
                         <ul class="mob-navigation-social-network">
-                            <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/m.svg"
-                                                                                             alt=","></a></li>
+                            <li class="mob-navigation-social-network__item"><a href="#"><img
+                                    src="./img/soc-icon/m.svg"
+                                    alt=","></a></li>
                             <li class="mob-navigation-social-network__item"><a href="#"><img
                                     src="./img/soc-icon/twitter.svg" alt="twitter"></a></li>
                             <li class="mob-navigation-social-network__item"><a href="#"><img
                                     src="./img/soc-icon/telegram.svg" alt="telegram"></a></li>
                             <li class="mob-navigation-social-network__item"><a href="#"><img
                                     src="./img/soc-icon/git-hub.svg" alt="git-hub"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/06.svg"
-                                                                                             alt="06"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/05.svg"
-                                                                                             alt="05"></a></li>
+                            <li class="mob-navigation-social-network__item"><a href="#"><img
+                                    src="./img/soc-icon/06.svg"
+                                    alt="06"></a></li>
+                            <li class="mob-navigation-social-network__item"><a href="#"><img
+                                    src="./img/soc-icon/05.svg"
+                                    alt="05"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
-            <div class="col col-md-16 col-lg-17 col-xl-17" id="main">
+            <div class="col col-md-16 col-lg-17 col-xl-17 full-pos" id="main">
                 <section class="section-0 section-center" id="section-0">
                     <div class="main">
-                        <img src="./img/logo-main.svg" alt="logo" class="main-logo">
-                        <div class="main-title">Paradigm</div>
-                        <div class="main-description">In Chaos lies the Truth</div>
-                        <a href="#" class="btn btn-primary">Investment thesis</a>
+                        <div class="main-content">
+                            <img src="./img/logo-main.svg" alt="logo" class="main-logo">
+                            <div class="main-title">Paradigm</div>
+                            <div class="main-description">In Chaos lies the Truth</div>
+                            <a href="https://paradigmfund.io/assets/pdf/investment_thesis.pdf" target="_blank"
+                               class="btn btn-primary">Investment thesis</a>
+                            <a href="#1" class="main-swipe-down">
+                                Swipe down
+                                <img src="./img/swipe-down.svg" alt="swipe down">
+                            </a>
+                        </div>
                     </div>
                 </section>
 
@@ -108,15 +122,13 @@
                     <div class="jumbotron">
                         <div class="title">About</div>
                         <div class="title-small">Our company</div>
-                        <div class="paragraph paragraph-imposed">Paradigm Fund combines both fundamental research
-                            constantly following
+                        <div class="paragraph">Paradigm Fund combines both fundamental research constantly following
                             day-to-day operations of cryptonetworks and quantative finance techniques to provide
                             investors with exposure
                             to state-of-the-art technologies and optimal risk-reward strategy in the evolving asset
                             class.
                         </div>
-                        <div class="paragraph paragraph-imposed">6 years of full-time experience in the crypto industry
-                            allowed us to
+                        <div class="paragraph">6 years of full-time experience in the crypto industry allowed us to
                             formulate a stable strategy outperforming industry benchmark and reducing risk. Join us in
                             an unforgettable
                             journey into the alternative financial system.
@@ -160,13 +172,15 @@
                                 <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
                                 <div>
                                     <div class="title">David Kavazi</div>
-                                    <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with
-                                        background in Economics
-                                        and
-                                        Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013.
-                                        His main focus is
-                                        market macro analysis, fundamental analysis and long-term value research. M.S.
-                                        in Law at BSU.
+                                    <div class="paragraph">Co-founder at Paradigm Fund and Head of Strategy at Citadel.
+                                        His educational
+                                        background combines History, Ethnology, Diplomacy, Political Science and Global
+                                        Economy, all
+                                        highly applicable to cryptonetwork analysis. Founding 4 IT consumer applications
+                                        and managing a
+                                        VC family fund for 5 years he encompassed great experience in venture projects
+                                        assessment.
+                                        Graduated from MGIMO, Faculty of International Relations.
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +213,40 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mob-team-slider">
+                            <div class="slide">
+                                <div class="title">David Kavazi</div>
+                                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in
+                                    Economics
+                                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013.
+                                    His main focus is
+                                    market macro analysis, fundamental analysis and long-term value research. M.S. in
+                                    Law at BSU.
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="title">Victor Smirnov</div>
+                                <div class="paragraph">Co-founder at Paradigm Fund and Head of Deep Analysis at Citadel.
+                                    With
+                                    background of founding numerous successful IT-projects and managing a VC family
+                                    fund. Has
+                                    prominent knowledge in Economics, Finance, Management and Neuroscience. Studied
+                                    International
+                                    Economic Relations at MGIMO.
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="title">Alex Falko</div>
+                                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in
+                                    Economics
+                                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013.
+                                    His main
+                                    focus is market macro analysis, fundamental analysis and long-term value research.
+                                    M.S. in Law
+                                    at BSU.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -206,7 +254,22 @@
                     <div class="jumbotron">
                         <div class="title">About</div>
                         <div class="title-small">Contacts</div>
-                        <img src="./img/contact-map.svg" alt="contact map" class="jumbotron-pic jumbotron-pic-full">
+                        <img src="./img/contact-map.svg" alt="contact map"
+                             class="jumbotron-pic jumbotron-pic-full">
+
+                        <div class="mob-contacts">
+                            <div class="title">Moscow office</div>
+                            <div class="paragraph">Russia, Moscow, Skatertny Lane, 8/1с1, office №4</div>
+                            <div class="paragraph">Tel.: 123 123 123 123</div>
+                            <div class="paragraph">E-mail: test@test.io</div>
+                        </div>
+
+                        <div class="mob-contacts">
+                            <div class="title">Cayman office</div>
+                            <div class="paragraph">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+                            <div class="paragraph">Tel.: 123 123 123 123</div>
+                            <div class="paragraph">E-mail: test@test.io</div>
+                        </div>
                     </div>
                 </section>
 
@@ -254,6 +317,120 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mob-support">
+                        <div class="title">Supported networks</div>
+                        <div class="mob-support-slider">
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-chainlink"></div>
+                                    <div class="support-list-item__title">Chainlink</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-iost"></div>
+                                    <div class="support-list-item__title">IOST</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-wanchain"></div>
+                                    <div class="support-list-item__title">Wanchain</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-icon"></div>
+                                    <div class="support-list-item__title">ICON</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-tezos"></div>
+                                    <div class="support-list-item__title">Tezos</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-enigma"></div>
+                                    <div class="support-list-item__title">Enigma</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-theta"></div>
+                                    <div class="support-list-item__title">Theta</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-orbs"></div>
+                                    <div class="support-list-item__title">ORBS</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <div class="mob-support-slide">
+                                <div class="support-list-item">
+                                    <div class="support-list-item__icon icon-cosmos"></div>
+                                    <div class="support-list-item__title">Cosmos</div>
+                                </div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="section-6">
@@ -293,18 +470,18 @@
             <div class="col-1 col-sm-2 mob-none col-md-2 col-lg-2 col-xl-2">
                 <nav class="social-network">
                     <ul class="social-network-list">
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/m.svg" alt=","></a>
-                        </li>
+                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/m.svg"
+                                                                               alt=","></a></li>
                         <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/twitter.svg"
                                                                                alt="twitter"></a></li>
                         <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/telegram.svg"
                                                                                alt="telegram"></a></li>
                         <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/git-hub.svg"
                                                                                alt="git-hub"></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/06.svg" alt="06"></a>
-                        </li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/05.svg" alt="05"></a>
-                        </li>
+                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/06.svg"
+                                                                               alt="06"></a></li>
+                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/05.svg"
+                                                                               alt="05"></a></li>
                     </ul>
                 </nav>
             </div>

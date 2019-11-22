@@ -227,8 +227,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mob-support-slider').slick({
   slidesToScroll: 1,
   infinite: false,
   fade: true,
-  prevArrow: '<button class="btn slider-btn-left"><img src="../img/btn-slider-left.svg" alt=""></button>',
-  nextArrow: '<button class="btn slider-btn-right"><img src="../img/btn-slider-right.svg" alt=""></button>'
+  prevArrow: '<button class="btn slider-btn-left"><img src="./img/btn-slider-left.svg" alt=""></button>',
+  nextArrow: '<button class="btn slider-btn-right"><img src="./img/btn-slider-right.svg" alt=""></button>'
 });
 
 /***/ }),
@@ -256,8 +256,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mob-team-slider').slick({
   slidesToScroll: 1,
   infinite: false,
   fade: true,
-  prevArrow: '<button class="btn slider-btn-left"><img src="../img/btn-slider-left.svg" alt=""></button>',
-  nextArrow: '<button class="btn slider-btn-right"><img src="../img/btn-slider-right.svg" alt=""></button>'
+  prevArrow: '<button class="btn slider-btn-left"><img src="./img/btn-slider-left.svg" alt=""></button>',
+  nextArrow: '<button class="btn slider-btn-right"><img src="./img/btn-slider-right.svg" alt=""></button>'
 });
 
 /***/ }),

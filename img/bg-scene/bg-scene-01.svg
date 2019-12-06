@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="780" viewBox="0 0 1440 780">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0" r="0.5" gradientTransform="scale(1 2)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#cfd8dc"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="Main_card._Clipping_mask_shape" data-name="Main card. Clipping mask shape" width="1440" height="780" rx="10" transform="translate(240 150)" opacity="0" fill="url(#radial-gradient)"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="-0.328" r="0.5" gradientTransform="translate(0 0.543) scale(1 2.656)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eceff1"/>
+      <stop offset="1" stop-color="#90a4ae"/>
+    </radialGradient>
+  </defs>
+  <g id="Main_card._Waves" data-name="Main card. Waves" transform="translate(-240 -150)" clip-path="url(#clip-path)">
+    <g id="Main_card._Waves-2" data-name="Main card. Waves" transform="translate(0 37)" opacity="0.5">
+      <g id="Wave_3" data-name="Wave 3" transform="translate(240 533.072)" opacity="0.3" style="mix-blend-mode: multiply;isolation: isolate">
+        <path id="Wave-3" d="M1062.115,889.518c332.286,0,582.635-185.26,857.88-185.26,0,93.036,0,359.818,0,359.818H0S0,774.764,0,704.218C449.491,704.218,620.008,889.518,1062.115,889.518Z" transform="translate(0 -704.218)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="Wave-3-2" data-name="Wave-3" d="M1062.115,889.518c332.286,0,582.635-185.26,857.88-185.26,0,93.036,0,359.818,0,359.818H0S0,774.764,0,704.218C449.491,704.218,620.008,889.518,1062.115,889.518Z" transform="translate(1920 -704.218)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+      </g>
+      <g id="Wave-2" transform="translate(240 383.182)" opacity="0.3" style="mix-blend-mode: multiply;isolation: isolate">
+        <path id="Wave-2-2" data-name="Wave-2" d="M.159,890.492c537.842,0,753.494-346.77,1141.865-346.77,303.425,0,478.011,347.015,777.976,347.015v162.527H0S.159,956.183.159,890.492Z" transform="translate(0 -543.722)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="Wave-2-3" data-name="Wave-2" d="M.159,890.492c537.842,0,753.494-346.77,1141.865-346.77,303.425,0,478.011,347.015,777.976,347.015v162.527H0S.159,956.183.159,890.492Z" transform="translate(1920 -543.722)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+      </g>
+      <g id="Wave-1" transform="translate(240 113)" opacity="0.3" style="mix-blend-mode: multiply;isolation: isolate">
+        <path id="Wave-1-2" data-name="Wave-1" d="M-.091,786.048c241.266,0,382.47-179.245,516.075-179.245,160.47,0,243.1,112.928,436.665,112.928,170.187,0,359.467-454.8,504.56-452.942C1647.607,269.228,1697.9,786.01,1920,786.01V1046.4H0S-.091,867.534-.091,786.048Z" transform="translate(0.091 -266.784)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="Wave-1-3" data-name="Wave-1" d="M-.091,786.048c241.266,0,382.47-179.245,516.075-179.245,160.47,0,243.1,112.928,436.665,112.928,170.187,0,359.467-454.8,504.56-452.942C1647.607,269.228,1697.9,786.01,1920,786.01V1046.4H0S-.091,867.534-.091,786.048Z" transform="translate(1920 -266.784)" opacity="0.498" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+      </g>
+    </g>
+  </g>
+</svg>

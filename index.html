@@ -5,499 +5,500 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Paradigm</title>
     <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/main.css">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+<link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+<link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+<link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+<link rel="stylesheet" href="./styles/main.css">
+
 </head>
 <body>
-<div class="bg-image"></div>
-<div class="wrapper">
-    <div class="container" id="root">
-        <div class="row" id="header">
-            <div class="col">
-                <div class="header mob-none">
-                    <div class="header-logo">
-                        <a href="#0">
-                            <img src="./img/logo.svg" alt="paradigm" class="logo logo-none">
-                        </a>
-                    </div>
-                    <nav>
-                        <ul class="header-navigation">
-                            <li class="header-navigation__item">
-                                <a href="/">Knowledge base <img src="./img/triangle-down.svg"
-                                                                alt="triangle-down"></a>
-                            </li>
-                            <li class="header-navigation__item">
-                                <a href="/" class="red-link">Sign in</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="mob-header">
-                    <div class="header-logo">
-                        <!--suppress HtmlUnknownAnchorTarget -->
-                        <a href="#0">
-                            <img src="./img/mob-logo.svg" alt="paradigm" class="logo logo-none">
-                        </a>
-                    </div>
-                    <button class="btn btn-link" id="btn-menu-open">
-                        <img src="./img/icon/icon-menu.svg" alt="menu">
-                    </button>
-                </div>
+
+    <!-- version 1.0.6 -->
+
+    <div class="bg-image"></div>
+    <div class="wrapper">
+        <div class="container-scene">
+            <div class="container" id="root">
+                <div class="row" id="header">
+    <div class="col">
+        <div class="header mob-none">
+            <div class="header-logo">
+                <!--suppress HtmlUnknownAnchorTarget -->
+                <a href="#0">
+                    <img src="./img/logo.svg" alt="paradigm" class="logo logo-none">
+                </a>
             </div>
+            <nav>
+                <ul class="header-navigation">
+                    <li class="header-navigation__item" id="drop-menu-item">
+                        Knowledge base
+                        <img src="./img/icon/icon-triangle-down.svg" class="drop-menu-icon" alt="triangle-down">
+
+                        <nav class="header-navigation-drop" id="drop-menu-content">
+                            <ul>
+                                <li class="header-navigation-drop__item"><a href="#">Project’s updates</a></li>
+                                <li class="header-navigation-drop__item"><a href="#">Project’s analysis</a></li>
+                                <li class="header-navigation-drop__item"><a href="#">State of Stake</a></li>
+                                <li class="header-navigation-drop__item"><a href="#">Regulations</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="header-navigation__item">
+                        <a href="/" class="red-link">Sign in</a>
+                    </li>
+                    <li class="header-navigation__item-absolute" id="drop-menu-lang-item">
+                        EN
+                        <nav class="header-navigation-drop-lang" id="drop-menu-content-item">
+                            <ul>
+                                <li class="header-navigation-drop-lang__item">
+                                    <a href="#">日本語</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="row scroll-container desktop-version" id="content">
-            <div class="col-24 col-sm-24 mob-sidebar-none col-md-6 col-lg-5 col-xl-5" id="sidebar">
-                <div class="sidebar">
-                    <div class="mob-navigation-header">
-                        <button class="btn btn-link btn-menu-close" id="btn-menu-close">
-                            <img src="./img/icon-close.svg" alt="icon-close">
-                        </button>
-                    </div>
-                    <nav>
-                        <ul class="sidebar-navigation">
-                            <li class="sidebar-navigation__item nav-num-0 sidebar-navigation__item-active">
-                                <a href="#0">Home</a>
-                            </li>
-                            <li class="sidebar-navigation__item nav-num-1">
-                                <a href="#1">About</a>
-                                <ul class="sidebar-navigation-drop">
-                                    <li class="sidebar-navigation__item nav-num-first"><a href="#1">Company</a></li>
-                                    <li class="sidebar-navigation__item nav-num-2"><a href="#2">Mission</a>
-                                    </li>
-                                    <li class="sidebar-navigation__item nav-num-3"><a href="#3">Team</a></li>
-                                    <li class="sidebar-navigation__item nav-num-4"><a href="#4">Contacts</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="sidebar-navigation__item nav-num-5"><a href="#5">Networks</a></li>
-                            <li class="sidebar-navigation__item nav-num-6"><a href="#6">Subscribe</a></li>
-                            <li class="sidebar-navigation__item nav-num-7"><a href="#7">Contact us</a></li>
-                            <li class="sidebar-navigation__item mob-elem"><a href="#">Sign in</a></li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="mob-navigation-social-network">
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/m.svg"
-                                    alt=","></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/twitter.svg" alt="twitter"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/telegram.svg" alt="telegram"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/git-hub.svg" alt="git-hub"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/06.svg"
-                                    alt="06"></a></li>
-                            <li class="mob-navigation-social-network__item"><a href="#"><img
-                                    src="./img/soc-icon/05.svg"
-                                    alt="05"></a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="mob-header">
+            <div class="header-logo">
+                <!--suppress HtmlUnknownAnchorTarget -->
+                <a href="#0">
+                    <img src="./img/mob-logo.svg" alt="paradigm" class="logo logo-none">
+                </a>
             </div>
-
-            <div class="col col-md-16 col-lg-17 col-xl-17 full-pos" id="main">
-                <section class="section-0 section-center" id="section-0">
-                    <div class="main">
-                        <div class="main-content">
-                            <img src="./img/logo-main.svg" alt="logo" class="main-logo">
-                            <div class="main-title">Paradigm</div>
-                            <div class="main-description">In Chaos lies the Truth</div>
-                            <a href="https://paradigmfund.io/assets/pdf/investment_thesis.pdf" target="_blank"
-                               class="btn btn-primary">Investment thesis</a>
-                            <a href="#1" class="main-swipe-down">
-                                Swipe down
-                                <img src="./img/swipe-down.svg" alt="swipe down">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-1" id="section-1">
-                    <div class="jumbotron">
-                        <div class="title">About</div>
-                        <div class="title-small">Our company</div>
-                        <div class="paragraph">Paradigm Fund combines both fundamental research constantly following
-                            day-to-day operations of cryptonetworks and quantative finance techniques to provide
-                            investors with exposure
-                            to state-of-the-art technologies and optimal risk-reward strategy in the evolving asset
-                            class.
-                        </div>
-                        <div class="paragraph">6 years of full-time experience in the crypto industry allowed us to
-                            formulate a stable strategy outperforming industry benchmark and reducing risk. Join us in
-                            an unforgettable
-                            journey into the alternative financial system.
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-2" id="section-2">
-                    <div class="jumbotron">
-                        <div class="title">About</div>
-                        <div class="title-small">Our mission</div>
-                        <img src="./img/logo-grope.svg" alt="logo grope" class="jumbotron-pic">
-                        <div class="paragraph paragraph-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-4">
-                    <div class="team jumbotron">
-                        <div class="title">About</div>
-                        <div class="title-small">Our team</div>
-                        <div class="tabs">
-                            <div class="tabs-navigation">
-                                <ul class="tabs-navigation-list">
-                                    <li class="tabs-navigation-list__item tabs-navigation-list__item-active">
-                                        David Kavazi
-                                    </li>
-                                    <li class="tabs-navigation-list__item">
-                                        Victor Smirnov
-                                    </li>
-                                    <li class="tabs-navigation-list__item">
-                                        Alex Falko
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tabs-content tabs-content-active">
-                                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
-                                <div>
-                                    <div class="title">David Kavazi</div>
-                                    <div class="paragraph">Co-founder at Paradigm Fund and Head of Strategy at Citadel.
-                                        His educational
-                                        background combines History, Ethnology, Diplomacy, Political Science and Global
-                                        Economy, all
-                                        highly applicable to cryptonetwork analysis. Founding 4 IT consumer applications
-                                        and managing a
-                                        VC family fund for 5 years he encompassed great experience in venture projects
-                                        assessment.
-                                        Graduated from MGIMO, Faculty of International Relations.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabs-content">
-                                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
-                                <div>
-                                    <div class="title">Victor Smirnov</div>
-                                    <div class="paragraph">Co-founder at Paradigm Fund and Head of Deep Analysis at
-                                        Citadel. With
-                                        background of founding numerous successful IT-projects and managing a VC family
-                                        fund. Has
-                                        prominent knowledge in Economics, Finance, Management and Neuroscience. Studied
-                                        International
-                                        Economic Relations at MGIMO.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabs-content">
-                                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
-                                <div>
-                                    <div class="title">Alex Falko</div>
-                                    <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with
-                                        background in Economics
-                                        and Law. Bitcoin evangelist and entrepreneur investing in crypto space since
-                                        2013. His main
-                                        focus is market macro analysis, fundamental analysis and long-term value
-                                        research. M.S. in Law
-                                        at BSU.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mob-team-slider">
-                            <div class="slide">
-                                <div class="title">David Kavazi</div>
-                                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in
-                                    Economics
-                                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013.
-                                    His main focus is
-                                    market macro analysis, fundamental analysis and long-term value research. M.S. in
-                                    Law at BSU.
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="title">Victor Smirnov</div>
-                                <div class="paragraph">Co-founder at Paradigm Fund and Head of Deep Analysis at Citadel.
-                                    With
-                                    background of founding numerous successful IT-projects and managing a VC family
-                                    fund. Has
-                                    prominent knowledge in Economics, Finance, Management and Neuroscience. Studied
-                                    International
-                                    Economic Relations at MGIMO.
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="title">Alex Falko</div>
-                                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in
-                                    Economics
-                                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013.
-                                    His main
-                                    focus is market macro analysis, fundamental analysis and long-term value research.
-                                    M.S. in Law
-                                    at BSU.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-3">
-                    <div class="jumbotron">
-                        <div class="title">About</div>
-                        <div class="title-small">Contacts</div>
-                        <img src="./img/contact-map.svg" alt="contact map"
-                             class="jumbotron-pic jumbotron-pic-full">
-
-                        <div class="mob-contacts">
-                            <div class="title">Moscow office</div>
-                            <div class="paragraph">Russia, Moscow, Skatertny Lane, 8/1с1, office №4</div>
-                            <div class="paragraph">Tel.: 123 123 123 123</div>
-                            <div class="paragraph">E-mail: test@test.io</div>
-                        </div>
-
-                        <div class="mob-contacts">
-                            <div class="title">Cayman office</div>
-                            <div class="paragraph">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
-                            <div class="paragraph">Tel.: 123 123 123 123</div>
-                            <div class="paragraph">E-mail: test@test.io</div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-5">
-                    <div class="support">
-                        <div class="title">Supported networks</div>
-                        <div class="support-list">
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-chainlink"></div>
-                                <div class="support-list-item__title">Chainlink</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-iost"></div>
-                                <div class="support-list-item__title">IOST</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-wanchain"></div>
-                                <div class="support-list-item__title">Wanchain</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-icon"></div>
-                                <div class="support-list-item__title">ICON</div>
-                            </div>
-                        </div>
-                        <div class="support-list">
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-tezos"></div>
-                                <div class="support-list-item__title">Tezos</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-enigma"></div>
-                                <div class="support-list-item__title">Enigma</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-theta"></div>
-                                <div class="support-list-item__title">Theta</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-orbs"></div>
-                                <div class="support-list-item__title">ORBS</div>
-                            </div>
-                            <div class="support-list-item">
-                                <div class="support-list-item__icon icon-cosmos"></div>
-                                <div class="support-list-item__title">Cosmos</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mob-support">
-                        <div class="title">Supported networks</div>
-                        <div class="mob-support-slider">
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-chainlink"></div>
-                                    <div class="support-list-item__title">Chainlink</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-iost"></div>
-                                    <div class="support-list-item__title">IOST</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-wanchain"></div>
-                                    <div class="support-list-item__title">Wanchain</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-icon"></div>
-                                    <div class="support-list-item__title">ICON</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-tezos"></div>
-                                    <div class="support-list-item__title">Tezos</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-enigma"></div>
-                                    <div class="support-list-item__title">Enigma</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-theta"></div>
-                                    <div class="support-list-item__title">Theta</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-orbs"></div>
-                                    <div class="support-list-item__title">ORBS</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                            <div class="mob-support-slide">
-                                <div class="support-list-item">
-                                    <div class="support-list-item__icon icon-cosmos"></div>
-                                    <div class="support-list-item__title">Cosmos</div>
-                                </div>
-                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-6">
-                    <div class="subscribe">
-                        <div class="title">Join our newsletter!</div>
-                        <div class="subscribe-form">
-                            <form action="">
-                                <input type="text" placeholder="Name" class="input-thick" title="Your name">
-                                <input type="email" placeholder="E-Mail" class="input-thick" title="Your e-mail">
-                                <button class="btn btn-primary">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-7">
-                    <div class="contact-us">
-                        <div class="title">Contact us</div>
-                        <div class="title-small">Inquiry form</div>
-                        <form action="" class="contact-us-form">
-                            <div class="contact-us-form__content">
-                                <div class="contact-us-form__content-left">
-                                    <input type="text" placeholder="NAME*" class="input-thick" title="required">
-                                    <input type="text" placeholder="COMPANY*" class="input-thick" title="required">
-                                    <input type="text" placeholder="E-MAIL" class="input-thick" title="required">
-                                </div>
-                                <div class="contact-us-form__content-right">
-                                    <!--suppress HtmlFormInputWithoutLabel -->
-                                    <textarea name="" id="" placeholder="Your question*" class="input-thick"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send request</button>
-                        </form>
-                    </div>
-                </section>
-            </div>
-            <div class="col-1 col-sm-2 mob-none col-md-2 col-lg-2 col-xl-2">
-                <nav class="social-network">
-                    <ul class="social-network-list">
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/m.svg"
-                                                                               alt=","></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/twitter.svg"
-                                                                               alt="twitter"></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/telegram.svg"
-                                                                               alt="telegram"></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/git-hub.svg"
-                                                                               alt="git-hub"></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/06.svg"
-                                                                               alt="06"></a></li>
-                        <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/05.svg"
-                                                                               alt="05"></a></li>
-                    </ul>
-                </nav>
-            </div>
+            <button class="btn btn-link" id="btn-menu-open">
+                <img src="./img/icon/icon-menu.svg" alt="menu">
+            </button>
         </div>
     </div>
 </div>
-<script src="./js/main.js"></script>
-<script src="./js/vendor.js"></script>
-<script>
-    new fullScroll({
-        mainElement: 'main',
-        displayDots: true,
-        dotsPosition: 'left',
-        animateTime: 0.7,
-        animateFunction: 'ease'
-    });
-</script>
+
+                <div class="row scroll-container desktop-version" id="content">
+                    <div class="col-24 col-sm-24 mob-sidebar-none col-md-6 col-lg-5 col-xl-5" id="sidebar">
+    <div class="sidebar">
+        <div class="mob-navigation-header">
+            <button class="btn btn-link btn-menu-close" id="btn-menu-close">
+                <img src="./img/icon-close.svg" alt="icon-close">
+            </button>
+        </div>
+        <nav>
+            <ul class="sidebar-navigation">
+                <li class="sidebar-navigation__item nav-num-0 sidebar-navigation__item-active">
+                    <a href="#0">Home</a>
+                </li>
+                <li class="sidebar-navigation__item nav-num-1">
+                    <a href="#1">About</a>
+                    <ul class="sidebar-navigation-drop">
+                        <li class="sidebar-navigation__item nav-num-first"><a href="#1">Company</a></li>
+                        <li class="sidebar-navigation__item nav-num-2"><a href="#2">Mission</a>
+                        </li>
+                        <li class="sidebar-navigation__item nav-num-3"><a href="#3">Team</a></li>
+                        <li class="sidebar-navigation__item nav-num-4"><a href="#4">Contacts</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-navigation__item nav-num-5"><a href="#5">Networks</a></li>
+                <li class="sidebar-navigation__item nav-num-6"><a href="#6">Subscribe</a></li>
+                <li class="sidebar-navigation__item nav-num-7"><a href="#7">Contact us</a></li>
+                <li class="sidebar-navigation__item mob-elem"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="mob-navigation-social-network">
+                <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/m.svg"
+                                                                                 alt=","></a></li>
+                <li class="mob-navigation-social-network__item"><a href="#"><img
+                        src="./img/soc-icon/twitter.svg" alt="twitter"></a></li>
+                <li class="mob-navigation-social-network__item"><a href="#"><img
+                        src="./img/soc-icon/telegram.svg" alt="telegram"></a></li>
+                <li class="mob-navigation-social-network__item"><a href="#"><img
+                        src="./img/soc-icon/git-hub.svg" alt="git-hub"></a></li>
+                <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/06.svg"
+                                                                                 alt="06"></a></li>
+                <li class="mob-navigation-social-network__item"><a href="#"><img src="./img/soc-icon/05.svg"
+                                                                                 alt="05"></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+                    <div class="col col-md-16 col-lg-17 col-xl-17 full-pos" id="main">
+                        <section class="section-0 section-center" id="section-0">
+    <div class="main">
+        <div class="main-content">
+            <img src="./img/logo-main.svg" alt="logo" class="main-logo">
+            <div class="main-title">Paradigm</div>
+            <div class="main-description">In Chaos lies the Truth</div>
+            <div class="main-description-light">Cryptoasset-focused hedge fund</div>
+            <a href="https://paradigmfund.io/assets/pdf/investment_thesis.pdf" target="_blank" class="btn btn-primary">
+                Investment thesis
+            </a>
+
+            <a href="#1" class="main-swipe-down">
+                Swipe down
+                <img src="./img/swipe-down.svg" alt="swipe down">
+            </a>
+        </div>
+    </div>
+</section>
+
+                        <section class="section-1" id="section-1">
+    <div class="jumbotron">
+        <div class="title">About</div>
+        <div class="title-small">Our company</div>
+        <div class="paragraph">Paradigm Fund combines both fundamental research constantly following
+            day-to-day operations of cryptonetworks and quantative finance techniques to provide investors with exposure
+            to state-of-the-art technologies and optimal risk-reward strategy in the evolving asset class.
+        </div>
+        <div class="paragraph">6 years of full-time experience in the crypto industry allowed us to
+            formulate a stable strategy outperforming industry benchmark and reducing risk. Join us in an unforgettable
+            journey into the alternative financial system.
+        </div>
+    </div>
+</section>
+
+                        <section class="section-2" id="section-2">
+    <div class="jumbotron">
+        <div class="title">About</div>
+        <div class="title-small">Mission</div>
+<!--        <img src="./img/logo-grope.svg" alt="logo grope" class="jumbotron-pic">-->
+        <div class="paragraph paragraph-center">
+            Optimize risk-reward ratio of institutional investor’s portfolio by providing balanced exposure to
+            cryptoassets. Operate with maximum transparency and responsibility.
+        </div>
+    </div>
+</section>
+
+                        <section class="section-4">
+    <div class="team jumbotron">
+        <div class="title">About</div>
+        <div class="title-small">Our team</div>
+        <div class="tabs">
+            <div class="tabs-navigation">
+                <ul class="tabs-navigation-list">
+                    <li class="tabs-navigation-list__item tabs-navigation-list__item-active">
+                        David Kavazi
+                    </li>
+                    <li class="tabs-navigation-list__item">
+                        Victor Smirnov
+                    </li>
+                    <li class="tabs-navigation-list__item">
+                        Alex Falko
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs-content tabs-content-active">
+                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
+                <div>
+                    <div class="title">David Kavazi</div>
+                    <div class="paragraph">Co-founder at Paradigm Fund and Head of Strategy at Citadel. His educational
+                        background combines History, Ethnology, Diplomacy, Political Science and Global Economy, all
+                        highly applicable to cryptonetwork analysis. Founding 4 IT consumer applications and managing a
+                        VC family fund for 5 years he encompassed great experience in venture projects assessment.
+                        Graduated from MGIMO, Faculty of International Relations.
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content">
+                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
+                <div>
+                    <div class="title">Victor Smirnov</div>
+                    <div class="paragraph">Co-founder at Paradigm Fund and Head of Deep Analysis at Citadel. With
+                        background of founding numerous successful IT-projects and managing a VC family fund. Has
+                        prominent knowledge in Economics, Finance, Management and Neuroscience. Studied International
+                        Economic Relations at MGIMO.
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content">
+                <img src="./img/team-user-pic.svg" alt="team user pic" class="tabs-content-img">
+                <div>
+                    <div class="title">Alex Falko</div>
+                    <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in Economics
+                        and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013. His main
+                        focus is market macro analysis, fundamental analysis and long-term value research. M.S. in Law
+                        at BSU.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mob-team-slider">
+            <div class="slide">
+                <div class="title">David Kavazi</div>
+                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in Economics
+                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013. His main focus is
+                    market macro analysis, fundamental analysis and long-term value research. M.S. in Law at BSU.
+                </div>
+            </div>
+            <div class="slide">
+                <div class="title">Victor Smirnov</div>
+                <div class="paragraph">Co-founder at Paradigm Fund and Head of Deep Analysis at Citadel. With
+                    background of founding numerous successful IT-projects and managing a VC family fund. Has
+                    prominent knowledge in Economics, Finance, Management and Neuroscience. Studied International
+                    Economic Relations at MGIMO.
+                </div>
+            </div>
+            <div class="slide">
+                <div class="title">Alex Falko</div>
+                <div class="paragraph">Co-founder of Paradigm Fund and CFO at Citadel with background in Economics
+                    and Law. Bitcoin evangelist and entrepreneur investing in crypto space since 2013. His main
+                    focus is market macro analysis, fundamental analysis and long-term value research. M.S. in Law
+                    at BSU.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                        <section class="section-3">
+    <div class="jumbotron">
+        <div class="title">About</div>
+        <div class="title-small">Contacts</div>
+        <img src="./img/contact-map.svg" alt="contact map" class="jumbotron-pic jumbotron-pic-full">
+
+        <div class="mob-contacts">
+            <div class="title">Moscow office</div>
+            <div class="paragraph">Russia, Moscow, Skatertny Lane, 8/1с1, office №4</div>
+            <div class="paragraph">Tel.: 123 123 123 123</div>
+            <div class="paragraph">E-mail: test@test.io</div>
+        </div>
+
+        <div class="mob-contacts">
+            <div class="title">Cayman office</div>
+            <div class="paragraph">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+            <div class="paragraph">Tel.: 123 123 123 123</div>
+            <div class="paragraph">E-mail: test@test.io</div>
+        </div>
+    </div>
+</section>
+
+                        <section class="section-5">
+    <div class="support">
+        <div class="title">Supported networks</div>
+        <div class="support-list">
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-chainlink"></div>
+                <div class="support-list-item__title">Chainlink</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-iost"></div>
+                <div class="support-list-item__title">IOST</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-wanchain"></div>
+                <div class="support-list-item__title">Wanchain</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-icon"></div>
+                <div class="support-list-item__title">ICON</div>
+            </div>
+        </div>
+        <div class="support-list">
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-tezos"></div>
+                <div class="support-list-item__title">Tezos</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-enigma"></div>
+                <div class="support-list-item__title">Enigma</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-theta"></div>
+                <div class="support-list-item__title">Theta</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-orbs"></div>
+                <div class="support-list-item__title">ORBS</div>
+            </div>
+            <div class="support-list-item">
+                <div class="support-list-item__icon icon-cosmos"></div>
+                <div class="support-list-item__title">Cosmos</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mob-support">
+        <div class="title">Supported networks</div>
+        <div class="mob-support-slider">
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-chainlink"></div>
+                    <div class="support-list-item__title">Chainlink</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide"  >
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-iost"></div>
+                    <div class="support-list-item__title">IOST</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-wanchain"></div>
+                    <div class="support-list-item__title">Wanchain</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-icon"></div>
+                    <div class="support-list-item__title">ICON</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-tezos"></div>
+                    <div class="support-list-item__title">Tezos</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-enigma"></div>
+                    <div class="support-list-item__title">Enigma</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-theta"></div>
+                    <div class="support-list-item__title">Theta</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-orbs"></div>
+                    <div class="support-list-item__title">ORBS</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="mob-support-slide">
+                <div class="support-list-item">
+                    <div class="support-list-item__icon icon-cosmos"></div>
+                    <div class="support-list-item__title">Cosmos</div>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                        <section class="section-6">
+    <div class="subscribe">
+        <div class="title">Join our newsletter!</div>
+        <div class="subscribe-form">
+            <form action="">
+                <input type="text" placeholder="Name" class="input-thick" title="Your name">
+                <input type="email" placeholder="E-Mail" class="input-thick" title="Your e-mail">
+                <button class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+                        <section class="section-7">
+    <div class="contact-us">
+        <div class="title">Contact us</div>
+        <div class="title-small">Inquiry form</div>
+        <form action="" class="contact-us-form">
+            <div class="contact-us-form__content">
+                <div class="contact-us-form__content-left">
+                    <input type="text" placeholder="NAME*" class="input-thick" title="required">
+                    <input type="text" placeholder="COMPANY*" class="input-thick" title="required">
+                    <input type="text" placeholder="E-MAIL" class="input-thick" title="required">
+                </div>
+                <div class="contact-us-form__content-right">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <textarea name="" id="" placeholder="Your question*" class="input-thick"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send request</button>
+        </form>
+    </div>
+</section>
+
+<!-- textarea -->
+
+                    </div>
+                    <div class="col-1 col-sm-2 mob-none col-md-2 col-lg-2 col-xl-2">
+    <nav class="social-network">
+        <ul class="social-network-list">
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/m.svg" alt=","></a></li>
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/twitter.svg"
+                                                                   alt="twitter"></a></li>
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/telegram.svg"
+                                                                   alt="telegram"></a></li>
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/git-hub.svg"
+                                                                   alt="git-hub"></a></li>
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/06.svg" alt="06"></a></li>
+            <li class="social-network-list__item"><a href="#"><img src="./img/soc-icon/05.svg" alt="05"></a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- АНИМАЦИЯ ИКОНОК -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/vendor.js"></script>
+    <script>
+        new fullScroll({
+            mainElement: 'main',
+            displayDots: true,
+            dotsPosition: 'left',
+            animateTime: 0.7,
+            animateFunction: 'ease'
+        });
+    </script>
 </body>
 </html>
